@@ -28,6 +28,7 @@ export const H2 = styled(animated.h2)`
     margin-bottom: ${rem(18)};
     font-size: clamp(${rem(18)}, 3vw, ${rem(40)});
     font-family: 'raleway';
+    font-variation-settings: 'wght' 700;
     line-height: ${em(24)};
     z-index: inherit;
 
