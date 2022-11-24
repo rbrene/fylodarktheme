@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { animated } from '@react-spring/web';
-import { rem, min } from '../../helpers/units';
+import { rem, em, min } from '../../helpers/units';
 
 
 export const H1 = styled(animated.h1)`
@@ -24,37 +24,17 @@ export const H1 = styled(animated.h1)`
 
 export const H2 = styled(animated.h2)`
     position: relative;
+    max-width: 100%;
+    margin-bottom: ${rem(18)};
+    font-size: clamp(${rem(18)}, 3vw, ${rem(40)});
     font-family: 'raleway';
+    line-height: ${em(24)};
     z-index: inherit;
-`;
 
-export const H3 = styled(animated.h3)`
-    position: relative;
-    font-family: 'raleway';
-    z-index: inherit;
-`;
-
-export const H4 = styled(animated.h4)`
-    position: relative;
-    font-family: 'raleway';
-    z-index: inherit;
-`;
-
-export const H5 = styled(animated.h5)`
-    position: relative;
-    font-family: 'raleway';
-    z-index: inherit;
-`;
-
-export const H6 = styled(animated.h6)`
-    position: relative;
-    font-family: 'raleway';
-    z-index: inherit;
-`;
-
-export const Small = styled(animated.small)`
-    position: relative;
-    z-index: inherit;
+    ${min('mobile')} {
+        line-height: ${em(18)};
+        max-width: 70%;
+    }
 `;
 
 export const P = styled(animated.p)`
@@ -73,6 +53,22 @@ export const P = styled(animated.p)`
         max-width: 100%;
         margin-top: ${rem(48)};
         line-height: 30px;
+    }
+`;
+
+
+export const P1 = styled(animated.p)`
+    position: relative;
+    max-width: 100%;
+    margin-block: ${em(16)};
+    font-size: clamp(${rem(14)}, 2vw, ${rem(16)});
+    font-family: inherit;
+    line-height: 24px;
+    z-index: inherit;
+
+    ${min('mobile')} {
+        max-width: 80%;
+        line-height: 21px;
     }
 `;
 

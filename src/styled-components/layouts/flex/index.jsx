@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Container from '../containers/index';
+import { rem } from '../../../helpers/units';
 
 
 const Flex = styled(Container)`
@@ -12,7 +13,7 @@ export const FlexColumn = styled(Flex)`
     flex-direction: column;
 `;
 
-export const FlexCenter = styled(FlexColumn)`
-    align-items: center;
-    justify-content: center;
+export const HeroLayout = styled(FlexColumn)`
+    height: max-content;
+    gap: ${rem(120)};
 `;

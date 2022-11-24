@@ -22,7 +22,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     &::-webkit-scrollbar {
-        width: ${rem(8)};
+        width: ${rem(0)};
     }
     &::-webkit-scrollbar-track {
         background-color: rgba(223, 223, 223, 0);

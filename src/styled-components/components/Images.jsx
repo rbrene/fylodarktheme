@@ -13,17 +13,44 @@ const Image = styled(animated.img)`
 
 export default Image;
 
+export const Picture = styled(animated.picture)`
+
+`;
+
+export const BackgroundImage = styled(animated.img)`
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
+`;
+
 export const Logo = styled(animated.img)`
     position: relative;
     width: 100%;
     height: 100%;
     z-index: inherit;
+    cursor: default;
+
+    ${min('desktop')} {
+        cursor: pointer;
+    }
+
 `;
 
 export const HomeImage = styled(animated.img)`
     position: relative;
     max-width: 100%;
     height: auto;
+    object-fit: contain;
+    z-index: inherit;
+`;
+
+export const ProductiveImage = styled(animated.img)`
+    position: relative;
+    max-width: 100%;
+    height: 100%;
     object-fit: contain;
     z-index: inherit;
 `;

@@ -22,3 +22,28 @@ export const HomeArticle = styled(Article)`
         padding-inline: ${rem(32)};
     }
 `;
+
+export const FeaturesArticle = styled(Article)`
+    width: max-content;
+    height: 100%;
+    margin-inline: auto;
+    padding-block: ${rem(120)};
+
+    ${min('mobile')} {
+        width: 100%;
+    }
+    
+    ${min('tablet')} {
+        padding-block: ${rem(64)};
+    }
+`;
+
+export const ProductiveArticle = styled(Article)`
+    padding: ${rem(16)};
+    width: 100%;
+    height: max-content;
+
+    ${min('mobile')} {
+        padding: ${rem(32)};
+    }
+`;

@@ -1,16 +1,17 @@
 import React from 'react';
-import { Section } from '../styled-components/index';
+import { HomeSection } from '../styled-components/components/Sections';
 import { HomeArticle } from '../styled-components/layouts/articles/index';
-import { HomeImage } from '../styled-components/components/Images';
+import { HomeImage, BackgroundImage } from '../styled-components/components/Images';
 import illustrationIntro from '../assets/images/illustration-intro.png';
 import { H1, P } from '../styled-components/global/Typography';
 import { HomeCTA } from '../styled-components/layouts/containers/ctas';
 import { HomeButton } from '../components/Button';
+import curvyBackground from '../assets/svg/bg-curvy-desktop.svg';
 
 
 const Home = () => {
     return (
-        <Section id='home'>
+        <HomeSection id='home'>
             <HomeArticle>
                 <HomeImage src={illustrationIntro} alt='home-illustration' />
                 <H1>All your files in one secure location accessible anywhere.</H1>
@@ -21,7 +22,8 @@ const Home = () => {
                     <HomeButton />
                 </HomeCTA>
             </HomeArticle>
-        </Section>
+            <BackgroundImage src={curvyBackground} alt='background' />
+        </HomeSection>
     )
 }
 
