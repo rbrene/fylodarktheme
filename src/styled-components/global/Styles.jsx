@@ -44,7 +44,7 @@ body,
     font-size: ${rem(16)};
     font-family: 'open-sans';
     background: var(--darkBlueIntroEmailSignUp);
-    color: inherit;
+    color: #fff;
     z-index: inherit;
     user-select: none;
 }

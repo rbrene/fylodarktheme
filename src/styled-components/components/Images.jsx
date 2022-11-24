@@ -11,3 +11,10 @@ const Image = styled(animated.img)`
 `;
 
 export default Image;
+
+export const Logo = styled(animated.img)`
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+`;

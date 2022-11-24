@@ -7,7 +7,7 @@ type Dimensions = {
 export const viewportDimensions: Dimensions = {
     desktop: 1080,
     tablet: 720,
-    mobile: 345
+    mobile: 480
 }
 
 export const px = (u: number) => `${u * 16}px`;
