@@ -20,7 +20,6 @@ export const List = styled(animated.ul)`
     ${min('mobile')} {
         gap: ${rem(52)};
     }
-
 `;
 
 export const ListItem = styled(animated.li)`
@@ -33,5 +32,4 @@ export const ListItem = styled(animated.li)`
     ${min('desktop')} {
         cursor: pointer;
     }
-
 `;

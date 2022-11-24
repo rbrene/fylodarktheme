@@ -18,8 +18,6 @@ const Item = ({ text }: NavItemProps) => {
             textDecoration: hover ? 'underline' : 'none'
         }
     })
-
-    console.log(ref)
     
     return (
         <ListItem

@@ -22,7 +22,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     &::-webkit-scrollbar {
-        width: ${rem(14)};
+        width: ${rem(8)};
     }
     &::-webkit-scrollbar-track {
         background-color: rgba(223, 223, 223, 0);
@@ -33,7 +33,7 @@ html {
     &::-webkit-scrollbar-thumb {
         display: block;
         border-radius: ${rem(50)};
-        background: var(--cyan);
+        background: linear-gradient(to bottom, var(--cyan) 0%, var(--blue) 100%);
     }
 }
 body,
@@ -47,6 +47,7 @@ body,
     color: #fff;
     z-index: inherit;
     user-select: none;
+    overflow-x: hidden
 }
 `;
 

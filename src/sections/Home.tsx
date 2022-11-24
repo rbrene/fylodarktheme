@@ -1,14 +1,26 @@
 import React from 'react';
 import { Section } from '../styled-components/index';
-import { FlexCenter } from '../styled-components/layouts/flex/index';
+import { HomeArticle } from '../styled-components/layouts/articles/index';
+import { HomeImage } from '../styled-components/components/Images';
+import illustrationIntro from '../assets/images/illustration-intro.png';
+import { H1, P } from '../styled-components/global/Typography';
+import { HomeCTA } from '../styled-components/layouts/containers/ctas';
+import { HomeButton } from '../components/Button';
 
 
 const Home = () => {
     return (
         <Section id='home'>
-            <FlexCenter>
-                {null}
-            </FlexCenter>
+            <HomeArticle>
+                <HomeImage src={illustrationIntro} alt='home-illustration' />
+                <H1>All your files in one secure location accessible anywhere.</H1>
+                <P>
+                    Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
+                </P>
+                <HomeCTA>
+                    <HomeButton />
+                </HomeCTA>
+            </HomeArticle>
         </Section>
     )
 }

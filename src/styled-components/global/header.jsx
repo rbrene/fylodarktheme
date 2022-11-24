@@ -4,10 +4,10 @@ import { rem, min } from '../../helpers/units';
 
 
 export const Header = styled(animated.header)`
-    position: absolute;
-    top: ${rem(24)};
+    position: relative;
     width: 100%;
     height: auto;
+    padding-block: ${rem(24)};
     padding-inline: clamp(${rem(20)}, 6vw, ${rem(80)});
     display: flex;
     justify-content: space-between;
