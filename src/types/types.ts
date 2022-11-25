@@ -10,3 +10,18 @@ export type FeatureCardProps = {
         description: string;
     }
 }
+
+export type LinkProps = {
+    to: string;
+    text: string;
+}
+
+export type TestimonialProps = {
+    data: {
+        id: number;
+        image: string;
+        name: string;
+        occupation: string;
+        text: string;
+    }
+}

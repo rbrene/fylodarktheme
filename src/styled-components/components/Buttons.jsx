@@ -27,3 +27,27 @@ export const HomeButton = styled(Button)`
     margin-block: ${rem(32)};
 `;
 
+export const SubmitButton = styled(animated.button)`
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: ${rem(14)};
+    font-family: 'raleway';
+    font-variation-settings: 'wght' 700;
+    padding: ${rem(16)};
+    border: none;
+    border-radius: ${rem(70)};
+    background: linear-gradient(to bottom right, var(--cyan) 0%, var(--blue) 100%);
+    color: #fff;
+    z-index: inherit;
+    cursor: default;
+
+    ${min('desktop')} {
+        cursor: pointer;
+    }
+
+    ${min('tablet')} {
+        cursor: pointer;
+        width: 50%;
+    }
+`;

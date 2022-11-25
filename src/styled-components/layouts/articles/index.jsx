@@ -42,6 +42,9 @@ export const ProductiveArticle = styled(Article)`
     padding: ${rem(16)};
     width: 100%;
     height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: ${rem(120)};
 
     ${min('mobile')} {
         padding: ${rem(32)};

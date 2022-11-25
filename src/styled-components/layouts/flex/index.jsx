@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Container from '../containers/index';
-import { rem } from '../../../helpers/units';
+import { rem, min } from '../../../helpers/units';
 
 
 const Flex = styled(Container)`
@@ -16,4 +16,18 @@ export const FlexColumn = styled(Flex)`
 export const HeroLayout = styled(FlexColumn)`
     height: max-content;
     gap: ${rem(120)};
+`;
+
+export const FooterFlex = styled(FlexColumn)`
+    max-width: ${rem(1080)};
+    height: max-content;
+    padding-inline: ${rem(32)};
+    margin-inline: auto;
+    gap: ${rem(16)};
+    place-content: end;
+
+    ${min('tablet')} {
+        padding-inline: 0;
+    }
+
 `;

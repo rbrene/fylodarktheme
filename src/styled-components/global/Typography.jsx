@@ -38,6 +38,15 @@ export const H2 = styled(animated.h2)`
     }
 `;
 
+export const H3 = styled(animated.h3)`
+    position: relative;
+    font-size: clamp(${rem(18)}, 3vw, ${rem(32)});
+    font-family: 'raleway';
+    font-variation-settings: 'wght' 700;
+    text-align: center;
+    z-index: inherit;
+`;
+
 export const P = styled(animated.p)`
     position: relative;
     max-width: 100%;
@@ -73,3 +82,20 @@ export const P1 = styled(animated.p)`
     }
 `;
 
+export const P3 = styled(animated.p)`
+    position: relative;
+    max-width: ${rem(673)};
+    margin-block: ${rem(16)} ${rem(32)};
+    margin-inline: auto;
+    font-size: ${rem(14)};
+    font-family: 'raleway';
+    font-variation-settings: 'wght' 400;
+    text-align: center;
+    line-height: 21px;
+    z-index: inherit;
+
+    ${min('tablet')} {
+        margin-block: ${rem(29)} ${rem(38)};
+    }
+
+`;

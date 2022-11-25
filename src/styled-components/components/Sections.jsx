@@ -11,3 +11,8 @@ export const FeaturesSection = styled(Section)`
     background-color: var(--darkBlueMain);
     height: max-content;
 `;
+
+export const ProductiveSection = styled(Section)`
+    background-color: var(--darkBlueMain);
+    height: max-content;
+`;
