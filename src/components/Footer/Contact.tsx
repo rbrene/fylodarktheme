@@ -8,14 +8,13 @@ import {
     FooterLocation,
     FooterPhone,
     FooterEmail,
-    FooterList,
-    FooterListItem,
-    Social
+    FooterList
 } from '../../styled-components/global/footer';
 import { FooterLogo } from '../../styled-components/components/Images';
 import { FooterGrid } from '../../styled-components/layouts/grids/index';
 import { FooterColumn } from '../../styled-components/layouts/grids/columns';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FooterLink } from '../../components/Link';
+import { SocialLink } from '../../components/Link';
 import { MdLocationPin, MdEmail } from 'react-icons/md';
 import { FiPhoneCall } from 'react-icons/fi';
 import logo from '../../assets/svg/logo.svg';
@@ -50,23 +49,23 @@ const Contact = () => {
                     </FooterColumn>
                     <FooterColumn>
                         <FooterList>
-                            <FooterListItem>About Us</FooterListItem>
-                            <FooterListItem>Jobs</FooterListItem>
-                            <FooterListItem>Press</FooterListItem>
-                            <FooterListItem>Blog</FooterListItem>
+                            <FooterLink text='About Us' />
+                            <FooterLink text='Jobs' />
+                            <FooterLink text='Press' />
+                            <FooterLink text='Blog' />
                         </FooterList>
                     </FooterColumn>
                     <FooterColumn>
                         <FooterList>
-                            <FooterListItem>Contact Us</FooterListItem>
-                            <FooterListItem>Terms</FooterListItem>
-                            <FooterListItem>Privacy</FooterListItem>
+                            <FooterLink text='Contact Us' />
+                            <FooterLink text='Terms' />
+                            <FooterLink text='Privacy' />
                         </FooterList>
                     </FooterColumn>
                     <FooterColumn>
-                        <Social><FaFacebookF/></Social>
-                        <Social><FaTwitter/></Social>
-                        <Social><FaInstagram/></Social>
+                        <SocialLink icon='facebook' />
+                        <SocialLink icon='twitter' />
+                        <SocialLink icon='instagram' />
                     </FooterColumn>
                 </FooterGrid>
             </FooterFlex>

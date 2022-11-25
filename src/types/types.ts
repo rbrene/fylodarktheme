@@ -25,3 +25,11 @@ export type TestimonialProps = {
         text: string;
     }
 }
+
+export type FooterLinkProps = {
+    text: string;
+}
+
+export type SocialLinkProps = {
+    icon: 'facebook' | 'twitter' | 'instagram'
+}

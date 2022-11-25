@@ -77,6 +77,12 @@ export const FooterListItem = styled(animated.li)`
     position: relative;
     font-size: clamp(${rem(12)}, 2vw, ${rem(14)});
     z-index: inherit;
+    cursor: default;
+
+    ${min('desktop')} {
+        cursor: pointer;
+    }
+
 `;
 
 export const Social = styled(animated.span)`
@@ -89,11 +95,16 @@ export const Social = styled(animated.span)`
     border: 1px solid #fff;
     border-radius: 50%;
     z-index: inherit;
+    cursor: default;
 
     svg {
         position: relative;
         width: ${rem(12)};
         height: auto;
+    }
+
+    ${min('desktop')} {
+        cursor: pointer;
     }
 
 `;
