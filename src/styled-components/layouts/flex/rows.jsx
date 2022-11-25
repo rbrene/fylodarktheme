@@ -19,7 +19,7 @@ export const ContactRow = styled(animated.div)`
     align-items: flex-end;
     background-color: var(--darkBlueFooter);
 
-    ${min('mobile')} {
+    ${min('tablet')} {
         height: ${rem(539)};
         align-items: flex-end;
     }
