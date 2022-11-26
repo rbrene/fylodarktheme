@@ -1,15 +1,19 @@
-import React from 'react';
-import Header from '../components/Header';
-import Routes from '../routes/Routes';
-import Footer from '../components/Footer/index';
+import React, { Suspense, lazy } from 'react';
+import Loader from '../components/Progressbar';
 
+
+const Header = lazy(() => import('../components/Header'));
+const Routes = lazy(() => import('../routes/Routes'));
+const Footer = lazy(() => import('../components/Footer/index'));
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Routes />
-      <Footer />
+      <Suspense fallback={<Loader />}>
+        <Header />
+        <Routes />
+        <Footer />
+      </Suspense>
     </>
   );
 }
