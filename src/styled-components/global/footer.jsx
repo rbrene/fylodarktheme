@@ -41,6 +41,7 @@ export const FooterLocation = styled(animated.div)`
     width: auto;
     height: 100%;
     font-size: ${rem(14)};
+    line-height: 24px;
     display: flex;
     gap: ${rem(16)};
     z-index: inherit;

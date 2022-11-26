@@ -33,3 +33,8 @@ export type FooterLinkProps = {
 export type SocialLinkProps = {
     icon: 'facebook' | 'twitter' | 'instagram'
 }
+
+export type ButtonProps = {
+    type?: string | undefined;
+    children: string | React.ReactNode;
+}

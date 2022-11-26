@@ -19,7 +19,7 @@ const Home = () => {
                     Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
                 </P>
                 <HomeCTA>
-                    <HomeButton />
+                    <HomeButton children='Get Started' />
                 </HomeCTA>
             </HomeArticle>
             <BackgroundImage src={curvyBackground} alt='background' />

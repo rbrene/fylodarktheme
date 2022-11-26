@@ -25,15 +25,29 @@ export const FormField = styled(animated.fieldset)`
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     gap: ${rem(32)};
     border: none;
     z-index: inherit;
 
     ${min('tablet')} {
-        flex-direction: row;
+        flex-direction: ${({$column}) => $column ? 'column' : 'row'};
     }
+`;
 
+export const InputField = styled(animated.fieldset)`
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: ${rem(8)};
+    border: none;
+    z-index: inherit;
+
+    ${min('tablet')} {
+        flex-direction: ${({$column}) => $column ? 'column' : 'row'};
+    }
 `;
 
 export const Input = styled(animated.input)`
@@ -51,5 +65,15 @@ export const Input = styled(animated.input)`
     ${min('tablet')} {
         width: 100%;
     }
+`;
 
+export const Error = styled(animated.small)`
+    position: absolute;
+    top: calc(100% + ${rem(8)});
+    left: ${rem(16)};
+    font-size: clamp(${rem(8)}, 2vw, ${rem(10)});
+    font-family: 'open-sans';
+    font-variation-settings: 'wght' 400;
+    color: var(--lightRedError);
+    z-index: inherit;
 `;
